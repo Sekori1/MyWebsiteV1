@@ -1,0 +1,173 @@
+/* FOOTER */
+
+footer {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+#contact .shape-top {
+    background-color: #261325;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    height: 40px;
+}
+
+#contact > .title {
+    padding: 30px 70px;
+    flex: 1;
+    display: flex; /* contexte sur le parent */
+    flex-direction: row; 
+    align-items: center; /* alignement vertical */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .title h2 {
+    margin: 0;
+    color:  #442243;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 900;
+    box-sizing: border-box;
+    flex: 0;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+#contact .title span{
+    position: relative;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #261325;
+    flex-shrink: 1;
+}
+
+
+#contact > .content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+#contact .contactme {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .contactme .photo {
+    width: 8em;
+    height: 8em;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+#contact .contactme .photo img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#contact .contactme .content {
+    padding: 0 20px;
+}
+
+#contact .contactme .desc {
+    margin: 10px 0;
+}
+
+#contact .contactme .contact {
+    text-align: right;
+}
+
+#contact .contactme .contact button {
+    border: 0;
+    background-color: #261325;
+    font-size: 1em;
+    padding: 8px 25px;
+}
+
+#contact .contactme .contact button a {
+    color: #ebebd3;
+    text-decoration: none;
+}
+
+#contact .contactme .mail {
+    text-align: right;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+#contact .followme {
+    margin-top: 35px;
+    text-align: center;
+}
+
+#contact .followme .title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #442243;
+    text-align: center;
+}
+
+#contact .followme .icons {
+    font-size: 3.5em;
+}
+
+#contact .followme .icons i{
+    color: #261325;
+    margin: 8px;
+}
+
+footer .end {
+    flex: 0;
+    background-color: #442243;
+    clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: 30px;
+}
+
+footer .end .container {
+    height: 170px;
+    position: relative;
+    background-color: #261325;
+    clip-path: polygon(50% 35%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+    text-align: center;
+    overflow: hidden;
+}
+
+footer .end .container .content {
+    margin-top: 100px;
+}
+
+footer .end .container ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer .end .container ul li {
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    display:inline;
+    margin: 0 10px;
+}
+
+footer .end .container ul li a {
+    color: white;
+    text-decoration: none;
+}

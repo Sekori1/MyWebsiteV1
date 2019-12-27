@@ -1,0 +1,35 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+
+/*
+
+ * NOTE
+
+    ECRAN MOBILE   <   650px   <   ECRAN MOYEN   <   1200px   <   GRAND ECRAN
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebebd3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 0;  
+    min-width: 350px;
+    max-width: 100%;
+}
+
+@media (max-width: 650px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,26 @@
+.project-slider {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+
+.project-slider .left, .project-slider .right {
+    flex-shrink: 0;
+    background-color: #261325;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-slider .left svg, .project-slider .right svg {
+    height: 80px;
+    width: 80px;
+    fill: white;
+}
+
+.project-slider .content {
+    flex: 1;
+    background-color: #3B2A38;
+    margin: 0 10px;
+}

@@ -1,0 +1,155 @@
+#projects .projects-title {
+    padding: 30px 120px;
+    flex: 0;
+    display: flex; /* contexte sur le parent */
+    flex-direction: row; 
+    align-items: center; /* alignement vertical */
+}
+
+#projects .projects-title h2 {
+    margin: 0;
+    color:  #ebebd3;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    box-sizing: border-box;
+    flex: 0;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#projects .projects-title span{
+    position: relative;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ebebd3;
+    flex-shrink: 1;
+}
+
+#projects .projects-contents .card-position {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    left: 0;
+    right: 0;
+}
+
+#projects .projects-contents .card {
+    position: relative;
+    margin: 0 auto;
+} 
+
+
+#projects .card {
+    transition-duration: 0.7s;
+    transition-property: left, bottom;
+    left: 0;
+    bottom: 0;
+}
+
+#projects .card.show {
+    width: 330px;
+    height: 420px;
+}
+
+#projects .card.back {
+    /*opacity: 0.3;*/
+    opacity: 1;
+}
+
+#projects .card.back.left  {
+    left: 380px;
+    bottom: -40px;
+}
+
+#projects .card.back.right  {
+    left: -380px;
+    bottom: -40px;
+}
+
+#projects .card.hide {
+    opacity: 0;
+}
+#projects .card.hide.left {
+    left: 700px;
+    bottom: -400px;
+}
+#projects .card.hide.right {
+    left: -700px;
+    bottom: -400px;
+}
+
+#projects .card.hide {
+    animation-duration: 0.3s;
+    animation-name: cardhide;
+}
+
+@keyframes cardhide {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  
+
+
+
+/* LIST NAVIGATION */
+
+#projects svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #ebebd3;
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+}
+
+#projects svg:first-child {
+    left: 0;
+}
+
+#projects svg:last-child {
+    right: 0;
+}
+
+
+/* PLAN */
+
+
+#projects .plan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+#projects .plan-container .point {
+    border-radius: 50%;
+    border: solid 2px white;
+    padding: 3px;
+    margin: 3px;
+    z-index: 50s;
+}
+
+#projects .plan-container .point:before {
+    content: "";
+    display: block;
+    height: 11px;
+    width: 11px;
+    margin: 0;
+
+    background-color: white;
+    border-radius: 50%;
+
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+
+#projects .plan-container .point.select:before { 
+    opacity: 1;
+}

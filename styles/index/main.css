@@ -1,0 +1,51 @@
+
+section#intro {
+    display: flex;
+    flex-direction: column; 
+    min-height: 750px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* PROJECTS */
+
+#projects {
+    height: 700px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    background-color: #261325;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+#projects .projects-contents {
+    position: relative;
+    flex: 1;
+}
+
+ /* SKILLS */
+
+ #skills {
+    background-color: #ebebd3;
+    padding: 80px 0;
+    box-sizing: border-box;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+ }
+
+/* STUDIES */
+
+#studies {
+    position: relative;
+    background-color: #261325;
+    padding: 60px 15px;
+    box-sizing: border-box;
+}
+

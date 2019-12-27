@@ -1,0 +1,573 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+body {
+    background-color: #ebebd3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3em;
+    margin: 0;  
+}
+
+/* HEADER PARTS */
+
+header {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+}
+
+header nav {
+    flex: 0;    
+}
+
+header .header-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    padding: 0 10px; 
+    box-sizing: border-box;
+}
+
+.part.l-part {
+    position: relative;
+    flex: 5;
+}
+
+.part.r-part {
+    position: relative;
+    flex: 6
+}
+
+.part {
+    height: 100%;
+}
+
+
+/* PROFIL IMG */
+
+header .profil-image-container {
+    position: relative;
+
+    margin: 0 auto;
+    top: 15%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-15%); /* tiré de la moitié de sa propre hauteur */
+
+    width: 400px;
+    height: 400px;
+ 
+
+}
+
+header .foto-container {
+    position: relative;
+    height: 100%; /*The size of this component was managed by his parent*/
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+header .foto-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+/* PROFIL SHAPE */
+
+header .profil-image-container .shape-0 {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #989885;
+
+    bottom: -122px;
+    right: -50px;
+
+    display: flex;
+
+}
+
+header .profil-image-container .shape-1 {
+    position: absolute;
+    height: 87px;
+    width: 87px;
+    border-radius: 50%;
+    background-color: #989885;
+
+    bottom: 35px;
+    right: -69px;
+}
+
+/* PROFIL TITLE */
+
+header .title-container {
+    margin: auto;
+}
+
+header p.title {
+    position: relative;
+    margin: 0;
+    font-size: 3.8em;
+    left: 36px;
+}
+
+header .title .start {
+    
+    color: #ebebd3;
+}
+
+header .title .end {
+    
+    color: #989885;
+}
+
+/* ABOUT */
+
+header .about-title {
+    font-size: 2em;
+    font-weight: 800;
+    color: #442243;
+    margin: 15px 0;
+}
+
+header .about-desc {
+    padding: 0 40px 0 60px;
+    margin: 0;
+    font-size: 1em;
+    text-align: end;
+    color: #442243;
+}
+
+/* ABOUT BTN */
+
+header .discover-container-btn {
+    position: relative;
+
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    font-size: 0.8em;
+
+    margin: 30px auto;
+
+    color: #442243;
+
+}
+
+header .discover-container-btn .corner-left {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 70px;
+
+    border-top: solid #442243 3px;
+    border-left: solid #442243 3px;
+}
+
+header .discover-container-btn .corner-right {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 70px;
+
+    border-bottom: solid #442243 3px;
+    border-right: solid #442243 3px;
+}
+
+/* PROJECTS */
+
+#projects {
+    min-height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #261325;
+}
+
+#projects .title {
+    padding: 30px 120px;
+    flex: 0;
+    display: flex; /* contexte sur le parent */
+    flex-direction: row; 
+    align-items: center; /* alignement vertical */
+}
+
+#projects .title h2 {
+    margin: 0;
+    color:  #ebebd3;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    box-sizing: border-box;
+    flex: 0;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#projects .title span{
+    position: relative;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ebebd3;
+    flex-shrink: 1;
+}
+
+#projects .center-grid {
+    width: 100%;
+}
+
+#projects .projects-container .card {
+    position: relative;
+    margin: 40px auto;
+    transition-duration: 0.4s;
+    width: 100%;
+    max-width: 500px;
+    top: 0;
+    box-sizing: border-box;
+}
+
+#projects .projects-container .card-container div.content {
+    width: 100%;
+    height: 380px;
+    clip-path: polygon(50% 0, 100% 0, 100% 75%, 50% calc(100% - 45px), 0% 75%, 0 0);
+    background-color: #ebebd3;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+#projects .projects-container .card-container div.content .img {
+    width: 100%;
+    height: 380px;
+    clip-path: polygon(50% 0, 100% 0, 100% 75%, 50% calc(100% - 40px), 0% 75%, 0 0);
+    background-position: center;
+    background-size: cover;
+    background-repeat: cover;
+}
+
+#projects .projects-container .card-container div.back {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    clip-path: polygon(50% 0, 100% 0, 100% calc(75% + 7px), 50% 100%, 0%  calc(75% + 7px), 0 0);
+    background-color: #ebebd3;
+ }
+
+ /* SKILLS */
+
+ .skills {
+    background-color: #ebebd3;
+    height: 100vh;
+    padding: 70px 50px;
+    box-sizing: border-box;
+    position: relative;
+ }
+
+ .skills .top-container {
+     height: 120px;
+     margin: 0;
+     position: relative;
+ }
+ 
+.skills .title-section {
+    position: relative;
+    height: 100%;
+    margin-left: 40px;
+}
+
+ .skills .shape-0 {
+    height: 140px;
+    width: 145px;
+    line-height: 140px;
+    border-radius: 50%;
+    background-color: #261325;
+ }
+
+.skills .shape-1 {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background-color: #261325;
+    border-radius: 50%;
+    border: solid 5px #ebebd3;
+
+    top: 0;
+    left: -20px;
+}
+
+
+ .skills .title-section p {
+    position: relative;
+    font-size: 3em;
+    font-weight: 900;
+    left: 50px;
+    margin: 0;
+ }
+
+ .skills p span.start {
+     color: #ebebd3;
+ }
+
+ .skills p span.end {
+    color: #261325; 
+    padding-left: 5px;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    margin: 50px 0;
+}
+
+.skills-item {
+     background-color: #442243;
+     border-radius: 25px;
+     height: 110px;
+     width: 110px;
+     margin: 0 5px;
+}
+
+.skills-description-container {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 1em;
+}
+
+/* STUDIES */
+
+#studies {
+    position: relative;
+    height: 100vh;
+    background-color: #261325;
+    padding: 60px 15px;
+    box-sizing: border-box;
+}
+
+#studies .title-section {
+    position: absolute;
+    top: 65px;
+    left: 140px;
+}
+
+#studies .shape-0 {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ebebd3;
+ }
+
+#studies .title-section p {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.5em;
+    right: 100px;
+    margin: 0;
+ }
+
+ #studies p span.start {
+     color: #ebebd3;
+ }
+
+ #studies p span.end {
+    color: #442243; 
+    padding-left: 5px;
+}
+
+/* STUDIES GRID */
+
+#studies .studies-grid {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#studies .studies-grid .date {
+    flex: 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 900;
+    color: #ebebd3;
+}
+
+#studies .studies-grid .date-content {
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+#studies .studies-grid .date-content .content {
+    flex: 1;
+    height: 100%;
+    display: flex;
+}
+
+#studies .studies-grid .date-content .content .center {
+    margin: auto;
+}
+
+#studies .studies-grid .date-content .bar {
+    flex-shrink: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #ebebd3;
+    display: block;
+}
+
+#studies .studies-grid .end {
+    position: relative;
+    height: 50px;
+}
+
+#studies .studies-grid .end .bar {
+    height: 100%;
+    width: 3px;
+    margin: 0 auto;
+    background-color: #ebebd3;
+}
+
+#studies .content h3 {
+    color: #ebebd3;
+    margin: 0;
+    text-align: center;
+    line-height: 1em;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+#studies .content p {
+    color: #ebebd3;
+    text-align: center;
+}
+
+#studies .content p.option {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #261325;
+}
+
+#studies .content p.option span {
+    background-color: #ebebd3;
+    border-radius: 35px;
+    padding: 4px 35px;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding-top: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact .title {
+    padding: 30px 70px;
+    display: flex; /* contexte sur le parent */
+    flex-direction: row; 
+    align-items: center; /* alignement vertical */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .title h2 {
+    margin: 0;
+    color:  #442243;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 900;
+    box-sizing: border-box;
+    flex: 0;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#contact .title span{
+    position: relative;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #261325;
+    flex-shrink: 1;
+}
+
+#contact .contact-grid {
+    width: 520px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 250px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+#contact .contact-grid input, #contact .contact-grid textarea {
+    background-color: white;
+    border-radius: 25px;
+    
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    border: none;
+
+    min-width: 0;
+    padding: 12px 25px;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+#contact *:focus {
+    outline-width: 0;
+}
+
+#contact .contact-grid .email {
+    grid-column: span 2;
+}
+
+#contact .contact-grid textarea {
+    grid-column: span 2;
+    resize: none;
+}
+
+
+footer .end {
+    height: 250px;
+    background-color: #442243;
+    clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+footer .end .content {
+    height: 100%;
+    background-color: #261325;
+    clip-path: polygon(50% 35%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+}

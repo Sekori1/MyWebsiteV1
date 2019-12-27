@@ -1,0 +1,103 @@
+
+/***********************************
+        PROFIL IMG
+***********************************/
+
+section#intro .content .profil {
+    position: relative;
+    flex: 1;
+}
+
+section#intro .content .profil .content {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+section#intro .content .profil .circle {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: #989885;
+    border-radius: 50%;
+}
+
+@media (max-width: 650px) {
+    section#intro .content .profil .content {
+        height: 200px;
+        width: 200px;
+    }
+
+    section#intro .content .profil .circle {
+        height: 0;
+        width: 0;
+    }
+}
+
+section#intro .content .profil .circle.left {
+    left: -50px;
+    top: 0;
+}
+
+section#intro .content .profil .circle.right {
+    right: -50px;
+    bottom: 0;
+}
+
+
+section#intro .content .profil .foto-container {
+    position: relative;
+    height: 100%; /*The size of this component was managed by his parent*/
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 10px #ebebd3;
+    margin: auto;
+    text-align: initial;
+}
+
+
+section#intro .content .profil .foto-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+/***********************************
+        ABOUT 
+***********************************/
+
+section#intro .content .about {
+    flex: 1 100%;
+}
+
+section#intro .content .about .title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #442243;
+    margin: 30px 0 0 0;
+}
+
+section#intro .content .about .desc {
+    margin: 0 auto;
+    padding: 20px 40px;
+    overflow: hidden;
+    max-width: 1050px;
+
+    color: #442243;
+    font-size: 1em;
+}
+
+/***********************************
+        ABOUT BUTTON
+***********************************/
+
+section#intro .content .more {
+    padding-bottom: 40px;
+}
+
+
+

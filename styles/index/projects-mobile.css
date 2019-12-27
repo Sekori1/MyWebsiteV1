@@ -1,0 +1,9 @@
+@media (max-width: 650px) {
+    #projects .projects-title {
+        padding: 30px 20px;
+    }
+    
+    #projects .projects-title span{
+        height: 4px;
+    }
+}

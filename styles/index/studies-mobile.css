@@ -1,0 +1,45 @@
+
+@media (max-width: 650px) { 
+    
+    #studies .title-section {
+        left: 100px;
+        top: 20px;
+    }
+    
+    #studies .shape-0 {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        background-color: #ebebd3;
+     }
+    
+    #studies .title-section p {
+        position: relative;
+        font-weight: 900;
+        font-size: 1.5em;
+        right: 74px;
+        margin: 0;
+     }
+
+
+    #studies .studies-grid .date-content {
+        grid-column: 1 / span 3!important;
+        position: relative;
+        flex: 1;
+        display: flex;
+    }
+    #studies .studies-grid .date {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 900;
+        color: #653764;
+    }
+    #studies .studies-grid .date.left {
+        grid-column: 1;
+    }
+    #studies .studies-grid .date.right {
+        grid-column: 3;
+    }
+    
+}

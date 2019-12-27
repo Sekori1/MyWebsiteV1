@@ -1,0 +1,77 @@
+#projects .cards-container {
+    position: relative;
+    flex: 1;
+
+}
+
+#projects .cards-container .cards-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    grid-auto-rows: 0;
+    justify-items: center;
+    justify-content: center;
+    transition-duration: 0.8s;
+}
+
+#projects .card {
+    position: relative;
+    margin: 20px;
+    transition-duration: 0.8s;
+}
+
+#projects .card.show {
+    width: 352px;
+    height: 440px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#projects .card.back {
+    margin-top: 80px;
+    opacity: 0.4;
+}
+
+#projects .card.back.left  {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#projects .card.back.right  {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#projects .card.hide {
+    opacity: 0.1;
+}
+#projects .card.hide.left {
+    grid-column: 1;
+    grid-row: 2;
+    left: -250px;
+}
+#projects .card.hide.right {
+    grid-column: 3;
+    grid-row: 2;
+    right: -250px;
+}
+
+/* LIST NAVIGATION */
+
+#projects svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #ebebd3;
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+}
+
+#projects svg:first-child {
+    left: 0;
+}
+
+#projects svg:last-child {
+    right: 0;
+}, 

@@ -1,0 +1,12 @@
+section.content {
+    margin: 120px 20px;
+}
+
+section.content .margin {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+section.carousel {
+    height: 100vh;
+}
