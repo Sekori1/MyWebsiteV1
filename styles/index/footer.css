@@ -76,10 +76,9 @@ footer p {
 }
 
 #contact .contactme .photo img {
+    height: 100%;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    object-fit: cover;
 }
 
 #contact .contactme .content {
@@ -170,4 +169,13 @@ footer .end .container ul li {
 footer .end .container ul li a {
     color: white;
     text-decoration: none;
+}
+
+
+footer .credit {
+    background-color: #261325;
+    font-size: 0.8em;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
 }
